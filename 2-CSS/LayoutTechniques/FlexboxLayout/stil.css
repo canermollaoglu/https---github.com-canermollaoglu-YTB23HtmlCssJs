@@ -1,0 +1,43 @@
+.flex-item {
+  background-color: burlywood;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  /* width: 20%; */
+}
+
+.flex-container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  /* flex-flow: row wrap; */
+  background-color: cadetblue;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: space-between;
+}
+/* order için varsayılan değer 0 dır. -1 öğeyi en başa alır. 999 en sona gönderir. */
+.item1 {
+  /* align-self: flex-start; */
+  /* order: -1; */
+  /* flex-grow: 1; */
+  /* width: 200px; */
+  flex-shrink: 0;
+  flex-basis: 300px;
+}
+
+.item2 {
+  /* align-self: flex-end; */
+  /* order: 0; */
+  /* flex-grow: 3; */
+  width: 200px;
+  flex-shrink: 1;
+}
+
+.item3 {
+  /* align-self: center; */
+  /* order: 4; */
+  /* flex-grow: 3; */
+  width: 200px;
+  flex-shrink: 2;
+}

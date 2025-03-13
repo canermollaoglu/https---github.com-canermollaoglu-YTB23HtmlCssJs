@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox Layout Model</title>
+        <link rel="stylesheet" href="/2-CSS/LayoutTechniques/FlexboxLayout/stil.css">
+    </head>
+
+    <body>
+        <h1>Flexbox Layout Model</h1>
+        <p>2017 yılında css'e eklenmiştir. Float, clear, position, display gibi özellikleri kullanarak yaptığımız
+            işlemleri daha kolay yapabilmemizi sağlar.</p>
+        <ul>
+            <li>Flexbox, esnek kutu modelinin kısaltmasıdır.</li>
+            <li>Öğeleri sadece satırlar veya sadece sutunlar halinde düzenlemek için bir düzen yöntemidir.</li>
+            <li>Flexbox, float ve konumlandırma kullanmadan esnek, duyarlı bir düzen yapısı tasarlamayı kolaylaştırır.
+            </li>
+            <li>Esas Amacı: menüler, araç çubukları, buton grupları gibi tek satırlık veya tek sutunluk içerikler
+                üretmektir.</li>
+            <li>Özellikle içeriklerin dinamik boyutlara göre değişebildiği durumlarda (responsive tasarım)
+                kullanışlıdır.</li>
+        </ul>
+
+        <h2>CSS FLEXBOX COMPONENTLERİ</h2>
+        <ul>
+            <li>Flex Container</li>
+            <li>Flex Items</li>
+        </ul>
+        <br><br>
+        <h1>Create a FlexBox Container</h1>
+        <div class="flex-container">
+            <div class="flex-item item1">1</div>
+            <div class="flex-item item2">2</div>
+            <div class="flex-item item3">3</div>
+            <div class="flex-item item4">4: Lorem ipsum dolor sit amet.</div>
+        </div>
+
+        <h1>Flexbox Container Özellikleri</h1>
+        <ul>
+            <li>
+                flex-direction:
+                <p>Elemanları yan yana değil, alt alta sıralayabiliriz.</p>
+                <ul>
+                    <li>row</li>
+                    <li>row-reverse</li>
+                    <li>column</li>
+                    <li>column-reverse</li>
+                </ul>
+            </li>
+            <li>
+                flex-wrap:
+                <p>Elemanlar sığmazsa, bir sonraki satıra geçebilir.</p>
+                <ul>
+                    <li>nowrap</li>
+                    <li>wrap</li>
+                    <li>wrap-reverse</li>
+                </ul>
+            </li>
+            <li>
+                flex-flow:
+                <p>flex-direction ve flex-wrap özelliklerini aynı anda belirlemek için kullanılır.</p>
+                <ul>
+                    <li>flex-flow:row wrap</li>
+                </ul>
+            </li>
+            <li>
+                justify-content:
+                <p>Elemanları yatayda hizalamak için kullanılır.</p>
+                <ul>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>center</li>
+                    <li>space-between:
+                        <p>ilk öğe ana eksenin başına hizalanır. Son öğe sona hizalanır. Kalan tüm boşluklar eşit olarak
+                            öğeler arasında dağıtılır.</p>
+                    </li>
+                    <li>space-around:
+                        <p>Öğelerin etrafına eşit miktarda boşluk eklenir. Ancak kenar öğeleri ile kapsayıcı kenarı
+                            arasında daha küçük bir boşluk kalır.</p>
+                    </li>
+                    <li>
+                        space-evenly:
+                        <p>Öğeler arasında ve etrafında eşit boşluk bırakır.</p>
+                    </li>
+                    <li>
+                        aling-items:
+                        <p>Elemanları dikeyde hizalamak için kullanılır.</p>
+                        <ul>
+                            <li>stretch</li>
+                            <li>flex-start</li>
+                            <li>flex-end</li>
+                            <li>center</li>
+                            <li>baseline</li>
+                            <li>space-around</li>
+                            <li>space-between</li>
+                            <li>space-evenly</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h1>FlexItem Özellikleri</h1>
+        <ul>
+            <li>align-self:
+                <p>Container içerisindeki her bir elemanı dikeyde tek tek hizalamak istersek kullanırız.</p>
+                <ul>
+                    <li>auto</li>
+                    <li>stretch</li>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>center</li>
+                    <li>baseline</li>
+                    <li>space-around</li>
+                    <li>space-between</li>
+                    <li>space-evenly</li>
+                </ul>
+            </li>
+            <li>
+                Order:
+                <p>Elemanları sıralamak için kullanılır.</p>
+            </li>
+            <li>
+                flex-grow:
+                <p>
+                    Elemanların büyüme oranını belirler. Eğer bir elemanın flex-grow değeri 1 ise, diğer elemanın 2 ise,
+                    1 olan elemanın büyüme oranı 2 olan elemanın yarısı kadar olur.
+                </p>
+                <p>varsayılan değeri: 0'dır.</p>
+            </li>
+            <li>flex-shrink:
+                <p>
+                    Bir flex öğesinin daraltılabilirlik oranını belirler. Eğer bir elemanın flex-shrink değeri 1 ise,
+                    diğer elemanın 2 ise, 1 olan elemanın daraltılabilirlik oranı 2 olan elemanın yarısı kadar olur.
+                <p>varsayılan değeri 1 dir. 0 dersek öğe hiçbir zaman genişliğinin altına inmez.</p>
+                </p>
+            </li>
+            <li>
+                flex-basis:
+                <p>Herbir elemana başlangıçta vereceğimiz genişlik özelliğidir.</p>
+            </li>
+            <li>
+                flex:
+                <p>flex-grow, flex-shrink ve flex-basis özelliklerini aynı anda belirlemek için kullanılır.</p>
+                <p>flex: 1 1 200px</p>
+            </li>
+        </ul>
+    </body>
+
+</html>

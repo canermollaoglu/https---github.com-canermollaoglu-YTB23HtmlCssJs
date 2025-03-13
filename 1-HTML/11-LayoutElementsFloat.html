@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout Elements (Float)</title>
+        <style>
+            #left {
+                background-color: bisque;
+                width: 220px;
+                padding: 5px;
+                float: left;
+            }
+
+            #right {
+                background-color: rgb(128, 233, 147);
+                width: 300px;
+                padding: 5px;
+                float: left;
+
+            }
+
+            #footer {
+                background-color: rgb(134, 134, 134);
+                padding: 5px;
+                clear: both;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>Htmlde elementleri istediğimiz düzende gösterebilmek zordur. Çünkü bazı elementler block elementtir yani tüm
+            satırı kaplarlar. Bu nedenle elementleri yan yana istediğimiz düzende getirebilmek için bazı teknikler
+            geliştirilmiştir. Bu teknikleri Layout Teknikleri dersinde göreceğiz.</p>
+        <br><br><br>
+        <div id="header">
+            <div id="navigation">
+                <!-- ul>li*4>a -->
+                <ul>
+                    <li><a href="">Anasayfa</a></li>
+                    <li><a href="">Hakkımızda</a></li>
+                    <li><a href="">Hizmetler</a></li>
+                    <li><a href="">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="left">
+            <h2>Sol Taraf</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis recusandae temporibus ad officiis
+                laudantium totam voluptatum? Error numquam dolores cumque optio veniam soluta, deleniti assumenda enim
+                minus? Reprehenderit, explicabo eligendi?</p>
+        </div>
+        <div id="right">
+            <h2>Sağ Taraf</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis recusandae temporibus ad officiis
+                laudantium totam voluptatum? Error numquam dolores cumque optio veniam soluta, deleniti assumenda enim
+                minus? Reprehenderit, explicabo eligendi?</p>
+        </div>
+        <div id="footer">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, expedita.
+            </p>
+        </div>
+    </body>
+
+</html>

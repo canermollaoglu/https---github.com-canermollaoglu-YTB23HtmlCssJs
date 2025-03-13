@@ -1,0 +1,12 @@
+Kurulacak Extentionlar
+Prettier
+Auto Close Tag
+Auto Rename Tag
+Material Icon Theme
+Live Server(Five Server)
+Path Intellisense
+C#
+C# Dev Kits
+C# Extentions
+Dracula Official
+tEST

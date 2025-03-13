@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tables</title>
+        <style>
+            /* Css yazmak istiyorum: */
+            #UrunTablosu {
+                background-color: rgb(166, 176, 215);
+                /* border: 1px solid black; */
+                border-collapse: collapse;
+            }
+
+            #UrunTablosu th,
+            td {
+                border: 1px solid black;
+                padding: 10px;
+            }
+
+            #UrunTablosu tr:nth-child(even) {
+                background-color: rgb(138, 154, 214);
+            }
+
+            #UrunTablosu tr:hover {
+                background-color: rgb(103, 125, 204);
+            }
+        </style>
+    </head>
+
+    <body>
+        <table id="UrunTablosu">
+            <tr>
+                <th>Ürün Adı</th>
+                <th>Ürün Fiyatı</th>
+                <th>Stok Miktarı</th>
+                <th>Kategori Adı</th>
+            </tr>
+            <tr>
+                <td>Iphone 14 Pro Max</td>
+                <td>98.500,00 TL</td>
+                <td>100 Adet</td>
+                <td>Elektronik</td>
+            </tr>
+            <tr>
+                <td>Kablosuz Mouse</td>
+                <td>350 TL</td>
+                <td>25</td>
+                <td>Bilgisayar Aksesuarları</td>
+            </tr>
+            <tr>
+                <td>Bluetooth Kulaklık</td>
+                <td>750 TL</td>
+                <td>15</td>
+                <td>Elektronik</td>
+            </tr>
+            <tr>
+                <td>Mekanik Klavye</td>
+                <td>1.200 TL</td>
+                <td>10</td>
+                <td>Bilgisayar Aksesuarları</td>
+            </tr>
+            <tr>
+                <td>Akıllı Saat</td>
+                <td>2.500 TL</td>
+                <td>8</td>
+                <td>Giyilebilir Teknoloji</td>
+            </tr>
+            <tr>
+                <td>Powerbank 20.000 mAh</td>
+                <td>950 TL</td>
+                <td>30</td>
+                <td>Elektronik</td>
+            </tr>
+        </table>
+    </body>
+
+</html>
